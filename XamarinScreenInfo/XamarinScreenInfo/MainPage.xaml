@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinScreenInfo"
+             x:DataType="local:MainPage"
+             x:Class="XamarinScreenInfo.MainPage"
+             Title="{Binding Content.Parent.BindingContext}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="View"
+ BasedOn="{StaticResource visualStyle}">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Spacing="5">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Label"
+ BasedOn="{StaticResource baseStyle}">
+                        <Setter Property="TextColor" Value="Black" />
+                        <Setter Property="FontSize" Value="Large" />
+                    </Style>
+                    <Style TargetType="Button"
+ BasedOn="{StaticResource baseStyle}">
+                        <Setter Property="TextColor" Value="Blue" />
+                        <Setter Property="FontSize" Value="Large" />
+                        <Setter Property="BorderColor" Value="Blue" />
+                        <Setter Property="BorderWidth" Value="2" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+            <Label Text="DeviceInfo.Model" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Button Text="{Binding Model}" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="DeviceInfo.Manufacturer" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Button Text ="{Binding Manufacturer}" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="DeviceInfo.Name" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Button Text="{Binding DeviceInfoName}" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="DeviceInfo.VersionString" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Button Text ="{Binding DeviceInfoVersionString}" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="DevicePlatform.ToString()" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Button Text="{Binding DevicePlatform}" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="DeviceInfo.Idiom.ToString()" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue"/>
+            <Button  Text ="{Binding DeviceIdiom}" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="DeviceInfo.DeviceType.ToString()" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue"/>
+            <Button Text="{Binding DeviceType}" FontSize="Medium" FontAttributes="Bold" />
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
