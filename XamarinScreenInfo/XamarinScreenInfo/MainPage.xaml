@@ -17,6 +17,13 @@
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout Orientation="Vertical" Spacing="5">
+            <StackLayout.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                    <GradientStop Color="#FF00FF00" Offset="0.0" />
+                    <GradientStop Color="#FF0000FF" Offset="0.5" />
+                    <GradientStop Color="Orange" Offset="1" />
+                </LinearGradientBrush>
+            </StackLayout.Background>
             <StackLayout.Resources>
                 <ResourceDictionary>
                     <Style TargetType="Label"
@@ -34,19 +41,75 @@
                 </ResourceDictionary>
             </StackLayout.Resources>
 
-            <Label Text="DeviceInfo.Model" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Label Text="DeviceInfo.Model" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button Text="{Binding Model}" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="DeviceInfo.Manufacturer" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Label Text="DeviceInfo.Manufacturer" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button Text ="{Binding Manufacturer}" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="DeviceInfo.Name" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Label Text="DeviceInfo.Name" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button Text="{Binding DeviceInfoName}" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="DeviceInfo.VersionString" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Label Text="DeviceInfo.VersionString" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button Text ="{Binding DeviceInfoVersionString}" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="DevicePlatform.ToString()" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue" />
+            <Label Text="DevicePlatform.ToString()" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button Text="{Binding DevicePlatform}" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="DeviceInfo.Idiom.ToString()" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue"/>
+            <Label Text="DeviceInfo.Idiom.ToString()" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button  Text ="{Binding DeviceIdiom}" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="DeviceInfo.DeviceType.ToString()" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Green" TextColor="AliceBlue"/>
+            <Label Text="DeviceInfo.DeviceType.ToString()" FontSize="Medium" FontAttributes="Bold" TextColor="AliceBlue">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                        <GradientStop Color="Red" Offset="0.2" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
             <Button Text="{Binding DeviceType}" FontSize="Medium" FontAttributes="Bold" />
 
 

@@ -5,7 +5,12 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinScreenInfo.Android", "XamarinScreenInfo\XamarinScreenInfo.Android\XamarinScreenInfo.Android.csproj", "{A3082AC3-36FF-4D63-AF72-1855C2F558C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinScreenInfo", "XamarinScreenInfo\XamarinScreenInfo\XamarinScreenInfo.csproj", "{9528CF7C-B8F3-4D1D-A1C4-60604F180E4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinScreenInfo", "XamarinScreenInfo\XamarinScreenInfo\XamarinScreenInfo.csproj", "{9528CF7C-B8F3-4D1D-A1C4-60604F180E4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A5FEA02-8507-489A-9E27-28E6078DA259}"
+	ProjectSection(SolutionItems) = preProject
+		Icon1.ico = Icon1.ico
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
